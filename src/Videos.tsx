@@ -7,9 +7,7 @@ import {
   useRemoteUsers,
   RemoteUser,
   LocalVideoTrack,
-  useRemoteVideoTracks,
   useRTCClient,
-  type IAgoraRTCRemoteUser,
 } from "agora-rtc-react";
 import { useState } from "react";
 
