@@ -38,7 +38,7 @@ export default function Meeting() {
         {inCall ? (
           <Videos
             videoClient={videoClient}
-            screenClient={videoClient} // Đổi thành videoClient luôn
+            screenClient={videoClient}
             onEndCall={() => setInCall(false)}
           />
         ) : (

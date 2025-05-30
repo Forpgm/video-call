@@ -250,6 +250,13 @@ export function Videos({ videoClient, screenClient, onEndCall }: VideoProps) {
   const uniqueRemoteUsers = Array.from(
     new Map(remoteUsers.map((u) => [u.uid, u])).values()
   );
+  console.log(
+    remoteUsers.map((u) => ({
+      uid: u.uid,
+      hasVideo: u.hasVideo,
+      hasAudio: u.hasAudio,
+    }))
+  );
 
   return (
     <div className="flex h-full w-full relative">
